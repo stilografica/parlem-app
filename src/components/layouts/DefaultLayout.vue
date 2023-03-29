@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps, toRefs } from "vue";
+import { defineProps, toRefs } from 'vue';
 
 const props = defineProps({
   hasItems: Boolean

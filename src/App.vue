@@ -1,5 +1,5 @@
 <script setup>
-import VerticalNavbar from '@/components/VerticalNavbar.vue';
+import VerticalNavbar from '@/components/navbar/VerticalNavbar.vue';
 </script>
 <template>
   <suspense>

@@ -17,8 +17,9 @@ const { isSmall } = useMobile();
     :active="item.active"
     :class="{ 'pl-8 list-item': !isSmall }"
     active-class="navbar-item-active"
-    >{{ item.title }}</v-list-item
-  >
+    :to="{ name: item.route }">
+    {{ item.title }}
+    </v-list-item>
 </template>
 <style scoped>
 .navbar-item-active {

@@ -9,6 +9,8 @@
       "givenName" : "Enriqueta",
       "familyName1" : "Parlem",
       "phone" : "668668668",
+      "billedMonth": "280,00",
+      "customerType": "Particular",
       "products": [
         {
           "_id" : 3454329,
@@ -36,6 +38,8 @@
       "givenName" : "Eduard",
       "familyName1" : "Vilamajor",
       "phone" : "612349657",
+      "billedMonth": "29,00",
+      "customerType": "Enterprise",
       "products": [
         {
           "_id" : 22222222,
@@ -56,6 +60,8 @@
       "givenName" : "Pere",
       "familyName1" : "Ramoneda",
       "phone" : "611116667",
+      "billedMonth": "168,29",
+      "customerType": "Particular",
       "products": [
         {
           "_id" : 1111111,

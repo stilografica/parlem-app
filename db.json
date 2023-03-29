@@ -1,0 +1,78 @@
+{
+  "customers": [
+    {
+      "id": 223021,
+      "docType" : "nif",
+      "docNum" : "11223344E",
+      "email" : "enriqueta.parlem@gmail.com",
+      "customerId" : "11111",
+      "givenName" : "Enriqueta",
+      "familyName1" : "Parlem",
+      "phone" : "668668668",
+      "products": [
+        {
+          "_id" : 3454329,
+          "productName" : "FIBRA 1000 ADAMO",
+          "productTypeName" : "ftth",
+          "numeracioTerminal" : 933933933,
+          "soldAt" : "2019-01-09 14:26:17",
+          "customerId" : 11111
+        },
+        {
+          "_id" : 41326777,
+          "productName" : "ENERGIA PLUS",
+          "productTypeName" : "enerr",
+          "soldAt" : "2022-12-18 18:59:59",
+          "customerId" : 11111
+        }
+      ]
+    },
+    {
+      "id": 3689372,
+      "docType" : "nif",
+      "docNum" : "41863700A",
+      "email" : "vilamajor@gmail.com",
+      "customerId" : "23432",
+      "givenName" : "Eduard",
+      "familyName1" : "Vilamajor",
+      "phone" : "612349657",
+      "products": [
+        {
+          "_id" : 22222222,
+          "productName" : "MOBIL 50",
+          "productTypeName" : "hehh",
+          "numeracioTerminal" : 612349657,
+          "soldAt" : "2020-08-07 09:23:12",
+          "customerId" : 23432
+        }
+      ]
+    },
+    {
+      "id": 841172,
+      "docType" : "nif",
+      "docNum" : "32327899Z",
+      "email" : "elsramoneda@gmail.com",
+      "customerId" : "19196",
+      "givenName" : "Pere",
+      "familyName1" : "Ramoneda",
+      "phone" : "611116667",
+      "products": [
+        {
+          "_id" : 1111111,
+          "productName" : "FIBRA 1000 ADAMO",
+          "productTypeName" : "ftth",
+          "numeracioTerminal" : 933933123,
+          "soldAt" : "2022-10-01 10:10:33",
+          "customerId" : 19196
+        },
+        {
+          "_id" : 1111111,
+          "productName" : "ENERGIA BASIC",
+          "productTypeName" : "enerr",
+          "soldAt" : "2022-10-01 10:26:33",
+          "customerId" : 19196
+        }
+      ]
+    }
+  ]
+}

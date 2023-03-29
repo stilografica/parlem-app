@@ -1,5 +1,13 @@
 <script setup>
-import VerticalNavbar from '@/components/navbar/VerticalNavbar.vue';
+import { onMounted } from 'vue'
+import VerticalNavbar from '@/components/navbar/VerticalNavbar.vue'
+import { useCustomersStore } from '@/stores/customers'
+
+const customersStore = useCustomersStore()
+
+onMounted(async() => {
+  await customersStore.getCustomers()
+})
 </script>
 <template>
   <suspense>

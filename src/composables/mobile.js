@@ -1,4 +1,5 @@
 import { ref, onMounted, onUnmounted } from 'vue'
+
 export function useMobile() {
   const isSmall = ref(false)
   onMounted(async () => {

@@ -26,7 +26,10 @@ npm install
 ```sh
 npm run dev
 ```
-
+###  Load local fake server
+```sh
+json-server --watch db.json
+```
 ### Compile and Minify for Production
 
 ```sh

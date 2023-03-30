@@ -14,7 +14,7 @@ onMounted(() => {
 })
 </script>
 <template>
-  <v-card class="product-card  pt-6 mt-5" width="374">
+  <v-card class="product-card pt-6 mt-5" width="374">
     <v-card-item>
       <span class="d-flex flex-wrap align-center mt-2 mb-5">
         <v-chip

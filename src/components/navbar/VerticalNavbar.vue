@@ -19,9 +19,9 @@ const homeLocation = () => {
 </script>
 
 <template>
-  <v-navigation-drawer floating permanent :rail="isSmall" class="my-10">
-    <img :src="brandLogo" class="ml-10 mt-3 mb-4 d-none d-lg-block brand" @click="homeLocation" />
-    <v-list density="compact" nav>
+  <v-navigation-drawer floating :rail="isSmall" class="my-10">
+    <img :src="brandLogo" class="ml-10 mt-3 mb-4 brand" @click="homeLocation" />
+    <v-list density="compact" nav :class="{ 'd-flex flex-space-between': isSmall }">
       <navbar-item v-for="(item, index) in menuItems" :key="index" :item="item" />
     </v-list>
   </v-navigation-drawer>

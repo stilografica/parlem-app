@@ -1,6 +1,7 @@
 <script setup>
 import { toRefs } from 'vue'
 import { useRouter } from 'vue-router'
+import { useMobile } from '@/composables/mobile'
 
 const router = useRouter();
 const props = defineProps({
@@ -14,6 +15,7 @@ const fullName = (customer) => {
 const customerDetailLocation = (id) => {
   return router.push({ name: "customer-detail", params: { id: id } });
 };
+const { isSmall } = useMobile();
 </script>
 <template>
   <v-table class="mt-5">
@@ -22,13 +24,13 @@ const customerDetailLocation = (id) => {
         <th class="text-left">
           <h3>Full Name</h3>
         </th>
-        <th class="text-left">
+        <th v-if="!isSmall" class="text-left">
           <h3>Document Number</h3>
         </th>
-        <th class="text-left">
+        <th v-if="!isSmall" class="text-left">
           <h3>Phone</h3>
         </th>
-        <th class="text-left">
+        <th v-if="!isSmall" class="text-left">
           <h3>Email</h3>
         </th>
         <th class="text-left">
@@ -41,9 +43,9 @@ const customerDetailLocation = (id) => {
         <td>
           <h3>{{ fullName(customer) }}</h3>
         </td>
-        <td>{{ customer.docNum }}</td>
-        <td>{{ customer.phone }}</td>
-        <td>{{ customer.email }}</td>
+        <td v-if="!isSmall">{{ customer.docNum }}</td>
+        <td v-if="!isSmall">{{ customer.phone }}</td>
+        <td v-if="!isSmall">{{ customer.email }}</td>
         <td>
           <v-icon
             icon="mdi-eye-arrow-right-outline"

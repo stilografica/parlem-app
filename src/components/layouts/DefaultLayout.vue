@@ -8,7 +8,7 @@ const { hasItems } = toRefs(props);
 </script>
 
 <template>
-  <main class="pa-10">
+  <main class="pa-5 pa-lg-10">
     <div v-if="hasItems" class="no-data-container">
       <slot />
     </div>
@@ -23,7 +23,15 @@ const { hasItems } = toRefs(props);
 .no-data-container {
   border-radius: 1.2rem;
   min-height: 90vh;
-  background-color: #f5f6f9;
-  padding: 4rem;
+  background-color: #ffff;
+  padding: 0;
+}
+@media (min-width: 1025px) {
+  .no-data-container {
+    border-radius: 1.2rem;
+    min-height: 90vh;
+    background-color: #f5f6f9;
+    padding: 4rem;
+  }
 }
 </style>

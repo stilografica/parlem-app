@@ -1,6 +1,11 @@
-# parlem-app
+# CRM APP - Parlem
 
-This template should help get you started developing with Vue 3 in Vite.
+
+Web application developed with Vue version 3 in Vite and store management made with Pinia.
+The user interface has been built with the Vuetify library.  
+The development carried out has been designed for an application that will continue to scale:  
+- The menu contains some items (disabled) that could be in the future.  
+- As we get more users, we would need to make the call with pagination and limit items per page. This would involve adding a pagination in the users table.
 
 ## Recommended IDE Setup
 

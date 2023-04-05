@@ -1,7 +1,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 export function useMobile() {
-  const isSmall = ref(false)
+  const isSmall = ref(window.innerWidth < 1025)
   onMounted(async () => {
     window.addEventListener('resize', handleResize)
     handleResize;
